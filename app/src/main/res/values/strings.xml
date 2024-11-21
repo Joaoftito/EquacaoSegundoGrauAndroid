@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EquacaoSegundoGrau</string>
+    <string name="inicio">Bem vindo ao app de cálculo de Bhaskara!</string>
+    <string name="num_a">Digite o valor de A</string>
+    <string name="num_b">Digite o valor de B</string>
+    <string name="num_c">Digite o valor de C</string>
+    <string name="calcular">Calcular</string>
+    <string name="zero_a">Variável A não pode ser igual a zero!</string>
+    <string name="delta_menor_0">Delta não pode ser menor que 0!</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNumA"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="@string/num_a"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/etNumB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvErro"
+        tools:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etNumC"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/num_c"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintStart_toStartOf="@+id/etNumB"
+        app:layout_constraintTop_toBottomOf="@+id/etNumB"
+        tools:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etNumB"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="@string/num_b"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/etNumC"
+        app:layout_constraintStart_toStartOf="@+id/etNumA"
+        app:layout_constraintTop_toBottomOf="@+id/etNumA"
+        tools:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toTopOf="@+id/tvDelta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumC" />
+
+    <TextView
+        android:id="@+id/tvDelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvX1"
+        app:layout_constraintEnd_toStartOf="@+id/tvX1"
+        app:layout_constraintStart_toStartOf="@+id/tvX1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/tvX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvX2"
+        app:layout_constraintEnd_toStartOf="@+id/tvX2"
+        app:layout_constraintStart_toStartOf="@+id/tvX2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDelta" />
+
+    <TextView
+        android:id="@+id/tvX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvX1" />
+
+    <TextView
+        android:id="@+id/tvInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/inicio"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvErro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvErro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etNumA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInicio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
